@@ -1,0 +1,5 @@
+
+suites:
+  gries_minecraft_builder_suite:
+    namespace: gries\Minecraft\Builder
+    psr4_prefix: gries\Minecraft\Builder

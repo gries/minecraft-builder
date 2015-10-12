@@ -1,0 +1,28 @@
+{
+  "name": "gries/minecraft-builder",
+  "description": "A library to build structures in Minecraft via. RCON.",
+  "license": "MIT",
+  "keywords": [
+    "minecraft",
+    "rcon",
+    "commands"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Christoph Rosse",
+      "email": "christoph@rosse.at"
+    }
+  ],
+  "require": {
+    "gries/minecraft-commander": "~0.0"
+  },
+  "require-dev": {
+    "phpspec/phpspec": "~2"
+  },
+  "autoload": {
+    "psr-4": {
+      "gries\\Minecraft\\Builder\\": "src"
+    }
+  }
+}
