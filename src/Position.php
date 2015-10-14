@@ -117,4 +117,16 @@ class Position
     {
         return $this->z;
     }
+
+    /**
+     * Convert this position to an array.
+     */
+    public function toArray()
+    {
+        return [
+            'x' => $this->x(),
+            'y' => $this->y(),
+            'z' => $this->z
+        ];
+    }
 }

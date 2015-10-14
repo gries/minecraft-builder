@@ -55,6 +55,12 @@ class PositionSpec extends ObjectBehavior
         $this->modifyZ(-1)->shouldMatchPosition(new Position(2, 3, 1));
     }
 
+    function it_can_be_converted_to_an_array()
+    {
+        $this->beConstructedWith(2, 3, 2);
+        $this->toArray()->shouldBeLike(['x' => 2, 'y' => 3, 'z' => 2]);
+    }
+
     public function getMatchers()
     {
         return [
